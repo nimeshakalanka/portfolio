@@ -1,0 +1,92 @@
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  animation: gradient 3s ease infinite;
+}
+
+.bg-300\% {
+  background-size: 300% 300%;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 6s ease-in-out infinite 2s;
+}
+
+.typing-animation::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar but keep functionality */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b5cf6;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed;
+}
+
+@keyframes float-fuzzy {
+          0% { transform: translateY(0px) rotate(0deg); }
+          25% { transform: translateY(-3px) translateX(2px) rotate(1deg); }
+          50% { transform: translateY(0px) translateX(-3px) rotate(-1deg); }
+          75% { transform: translateY(2px) translateX(1px) rotate(0.5deg); }
+          100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        .icon-container {
+            /* Ensures the hover effect works on the icon and the name area */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icon-floating {
+          animation: float-fuzzy 5s ease-in-out infinite;
+          transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+
+        .dim-icons .icon-floating {
+            opacity: 0.3;
+        }
+
+        .no-dim-icons .icon-floating {
+            opacity: 1;
+        }

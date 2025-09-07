@@ -1,11 +1,23 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'inter': ['Inter', 'sans-serif'],
+      },
+      animation: {
+        'gradient': 'gradient 3s ease infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'float-delayed': 'float-delayed 6s ease-in-out infinite 2s',
+      },
+      backgroundSize: {
+        '300%': '300% 300%',
+      },
+    },
   },
   plugins: [],
 }

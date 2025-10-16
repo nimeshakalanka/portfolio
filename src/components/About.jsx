@@ -17,7 +17,11 @@ const About = ({ darkMode }) => {
           <div className="relative -ml-20">
             <div className={`w-80 h-80 mx-auto rounded-2xl ${darkMode ? 'bg-gradient-to-r from-purple-600/30 to-blue-600/30' : 'bg-gradient-to-r from-blue-600/30 to-purple-600/30'} flex items-center justify-center backdrop-blur-sm transform hover:rotate-3 transition-all duration-500`}>
               <img
+<<<<<<< HEAD
                 src="https://res.cloudinary.com/dluwvqdaz/image/upload/v1758879998/me_xhsk42.pngss" 
+=======
+                src="https://res.cloudinary.com/dluwvqdaz/image/upload/v1758879998/me_xhsk42.png" 
+>>>>>>> ef7ecc6020d5068d601ee2c7079aaa3c5a57a83e
                 alt="Nimesh Akalanka"
                 className="w-full h-full object-cover rounded-2xl"
               />
